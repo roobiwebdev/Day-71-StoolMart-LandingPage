@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+li {
+  @apply font-medium cursor-pointer duration-300 hover:text-[#FC6808];
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  @apply md:bg-transparent md:border-none md:shadow-none;
+}
+
+.btn {
+  @apply p-2 px-16 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  margin-top: 5px;
+}
+.slashed-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: white;
+  transform: skewX(-20deg);
+  transform-origin: top right;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  @apply bg-black w-2 h-2 mt-5;
+}
+
+@layer utilities {
+  .loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side, #fa580a 90%, #ffffff00);
+    background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+    background-size: calc(100% / 3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+}

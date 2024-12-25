@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="assets/header_img01.png"
+      type="image/x-icon"
+    />
+
+    <title>STOOLMART</title>
+  </head>
+  <body class="overflow-hidden">
+    <div class="absolute z-30 w-full h-screen bg-white loading-wrapper">
+      <div
+        class="z-10 h-screen w-full flex justify-center items-center fixed top-0"
+      >
+        <div class="loader"></div>
+      </div>
+    </div>
+    <div
+      class="absolute inset-0 -z-10 h-fit w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] py-5"
+    >
+      <header class="w-full">
+        <nav
+          class="nav_data flex justify-between items-center md:w-11/12 mx-auto"
+        >
+          <div
+            class="w-48 h-12 md:h-16 rounded-e-3xl bg-[#FFFCBA] flex justify-center items-center transform md:rotate-90 md:mt-8 md:-ml-16"
+          >
+            <h1 class="text-xl font-bold font-Orbitron">STOOLMART</h1>
+          </div>
+
+          <div
+            class="absolute top-0 left-[-100%] right-0 w-full h-[60vh] flex flex-col justify-center items-center border duration-500 glass md:relative md:h-auto md:left-0 md:flex-row md:justify-between md:items-center md:w-7/12"
+            id="nav-bar"
+          >
+            <ul
+              class="flex gap-6 flex-col justify-center items-center text-center mb-5 md:flex-row md:mb-0"
+            >
+              <li class="nav-link">Home</li>
+
+              <li class="nav-link">Products</li>
+
+              <li class="nav-link">About Us</li>
+
+              <li class="nav-link">Contact</li>
+            </ul>
+
+            <button
+              class="p-2 px-8 border-2 border-black rounded-md cursor-pointer font-semibold duration-300 hover:bg-black hover:text-white"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <div
+            class="text-3xl font-semibold cursor-pointer mr-2 z-10 md:hidden"
+          >
+            <i class="ri-menu-3-line" id="menu"></i>
+          </div>
+        </nav>
+
+        <div
+          class="head_scale_data mt-10 md:mt-10 w-11/12 mx-auto text-center md:text-start flex flex-col justify-center items-center"
+        >
+          <h3 class="font-medium text-center md:text-3xl">
+            Elevate Your Space with Minimalist Bar
+          </h3>
+          <h1
+            class="text-6xl font-bold text-center tracking-widest md:text-8xl lg:text-[13rem] xl:text-[14rem] font-Orbitron md:font-extrabold"
+          >
+            STOOLS
+          </h1>
+
+          <div class="md:flex w-full justify-between items-center">
+            <div class="md:w-1/3">
+              <p class="my-5 font-medium">
+                SIMPLICITY IS THE ULTIMATE SOPHISTICATION. INTRODUCING OUR
+                COLLECTION OF MINIMAL BAR STOOLS.
+              </p>
+
+              <div
+                class="font-medium w-full flex gap-3 flex-col justify-center items-center md:justify-start md:text-start md:flex-row flex-wrap"
+              >
+                <p class="p-1 px-2 border-2 rounded-3xl border-black">
+                  WOODEN BARSTOOLS
+                </p>
+                <p class="p-1 px-2 border-2 rounded-3xl border-black">
+                  METAL BAR STOOLS
+                </p>
+                <p class="p-1 px-2 border-2 rounded-3xl border-black">
+                  SWIVEL BAR STOOLS
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex justify-center items-center relative md:w-1/3"
+            >
+              <div
+                class="w-60 h-60 rounded-full my-5 bg-[#F6F6F6] absolute top-10 -z-10"
+              ></div>
+              <img src="assets/header_img01.png" alt="" class="lg:w-64" />
+            </div>
+
+            <div
+              class="my-10 w-full flex flex-col justify-center items-center md:w-1/3"
+            >
+              <div class="w-72 h-72 rounded-b-full bg-[#FFFCBA]">
+                <img src="assets/header2.png" alt="" />
+              </div>
+              <div>
+                <div class="mt-10">
+                  <h1 class="text-3xl font-semibold">Explore our collection</h1>
+                  <p class="mt-3">
+                    Welcome to stool mart, where simplicity meets
+                    sophistication. Explore our curated collection of minimalist
+                    bar stools designed to transform your living spaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn">Order Now</button>
+        </div>
+      </header>
+
+      <main class="w-11/12 lg:w-10/12 mx-auto">
+        <section
+          class="my-12 mb-52 min-h-screen flex flex-col justify-center items-center"
+        >
+          <div
+            class="scale_data flex flex-col justify-center items-center md:flex-row md:justify-between"
+          >
+            <h1
+              class="text-3xl font-Orbitron font-semibold md:text-7xl tracking-wide"
+            >
+              Why Choose Us
+            </h1>
+            <img
+              src="assets/oneLine.png"
+              alt=""
+              class="-mt-6 md:m-0 md:w-1/3"
+            />
+          </div>
+
+          <div class="w-full md:flex justify-between items-center md:mt-12">
+            <div
+              class="left_data relative w-11/12 mx-auto rounded-3xl overflow-hidden md:w-1/2"
+            >
+              <div class="absolute inset-0 slashed-border"></div>
+              <img
+                src="assets/whychoos.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="right_data flex justify-between items-center mt-8 md:mt-0 md:w-1/2 md:justify-start md:gap-16 md:flex-col"
+            >
+              <div
+                class="flex flex-col justify-center items-center text-center"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-[#F6F6F6] flex justify-center items-center"
+                >
+                  <img src="assets/min.png" alt="" class="w-6/12" />
+                </div>
+
+                <h1 class="font-semibold">Minimalist Elegance</h1>
+              </div>
+
+              <div
+                class="flex flex-col justify-center items-center text-center"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-[#F6F6F6] flex justify-center items-center"
+                >
+                  <img src="assets/maintainable.png" alt="" class="" />
+                </div>
+
+                <h1 class="font-semibold">Quality CraftsManship</h1>
+              </div>
+
+              <div
+                class="flex flex-col justify-center items-center text-center"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-[#F6F6F6] flex justify-center items-center"
+                >
+                  <img src="assets/versatile.png" alt="" class="w-7/12" />
+                </div>
+
+                <h1 class="font-semibold">Versatile Design</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section calss="">
+          <div class="flex flex-col justify-between items-center lg:flex-row">
+            <h1
+              class="left_data text-3xl font-semibold md:text-5xl xl:text-6xl tracking-wide text-center md:text-start md:w-[60%] font-Orbitron"
+            >
+              Crafting Simplicity, Defining Elegance
+            </h1>
+            <img
+              src="assets/oneLine.png"
+              class="right_data -mt-6 md:m-0 md:w-1/3"
+            />
+          </div>
+
+          <div class="md:flex justify-between items-center mt-3">
+            <div class="left_data text-center md:text-start md:w-1/2">
+              <h1 class="text-3xl font-semibold md:text-5xl">1, Our Mission</h1>
+              <p class="mt-5 md:w-9/12">
+                At StoolMart, we believe that simplicity is the epitome of
+                sophistication. Our mission is to provide you with bar stools
+                that transcend trends, offering timeless elegance and
+                unparalleled comfort.
+              </p>
+            </div>
+
+            <div class="scale_data max-w-[26rem] h-56 md:w-1/2 md:mt-12">
+              <img src="assets/arrow.png" alt="" class="-my-16" />
+            </div>
+
+            <div
+              class="right_data md:w-1/2 h-96 flex justify-center items-center rounded-3xl bg-[#F9F9F9] -mt-16 md:mt-0"
+            >
+              <img src="assets/crafts.png" alt="" class="-my-16" />
+            </div>
+          </div>
+        </section>
+
+        <section calss="my-12">
+          <div
+            class="md:flex md:flex-row-reverse justify-between items-center mt-3"
+          >
+            <div class="left_data text-center md:text-start md:w-1/2 md:ml-12">
+              <h1 class="text-3xl font-semibold md:text-5xl">
+                2, Craftsmanship Difference
+              </h1>
+              <p class="mt-5">
+                Each bar stool in our collection is a testament to meticulous
+                craftsmanship. Our skilled artisans bring years of experience
+                and an unwavering dedication to every piece, ensuring that you
+                receive bar stools of the highest quality.
+              </p>
+            </div>
+
+            <div class="scale_data max-w-96 h-56 md:w-1/2 md:mt-12">
+              <img
+                src="assets/arrow.png"
+                alt=""
+                class="-my-16 transform rotate-180"
+              />
+            </div>
+
+            <div
+              class="left_data md:w-1/2 h-96 flex justify-center items-center rounded-3xl bg-[#F9F9F9] -mt-16 md:mt-0"
+            >
+              <img src="assets/minimal.png" alt="" class="-my-16" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section
+        class="head_scale_data w-full h-screen flex flex-col justify-center items-center"
+      >
+        <div class="flex flex-col justify-between items-center text-center">
+          <h1
+            class="text-3xl font-Orbitron font-semibold md:text-4xl lg:text-6xl"
+          >
+            Explore Our Products
+          </h1>
+          <p class="my-5 font-medium w-11/12 mx-auto">
+            Explore our collection of minimalist bar stools.
+          </p>
+        </div>
+
+        <div class="swiper w-11/12">
+          <div class="swiper-wrapper md:gap-10 py-10 pb-14 cursor-grab">
+            <div class="swiper-slide">
+              <div
+                class="max-w-auto min-w-auto min-h-[28rem] md:w-[25rem] flex justify-center items-center flex-col cursor-pointer border rounded-2xl"
+              >
+                <div
+                  class="border-2 w-full h-80 flex justify-center items-center rounded-2xl"
+                >
+                  <img src="assets/crafts.png" alt="" class="h-64" />
+                </div>
+
+                <h1 class="mt-5 text-2xl font-bold">EcoZen Bar Stool</h1>
+                <p class="text-gray-400">crafted frome wood</p>
+
+                <div class="flex justify-between items-center w-full px-4 pb-5">
+                  <h1 class="text-2xl font-bold mt-5">$8.00</h1>
+                  <button
+                    class="p-2 px-10 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="max-w-auto min-w-auto min-h-[28rem] md:w-[25rem] flex justify-center items-center flex-col cursor-pointer border rounded-2xl"
+              >
+                <div
+                  class="border-2 w-full h-80 flex justify-center items-center rounded-2xl"
+                >
+                  <img src="assets/minimal.png" alt="" class="h-64" />
+                </div>
+
+                <h1 class="mt-5 text-2xl font-bold">EcoZen Bar Stool</h1>
+                <p class="text-gray-400">crafted frome wood</p>
+
+                <div class="flex justify-between items-center w-full px-4 pb-5">
+                  <h1 class="text-2xl font-bold mt-5">$8.00</h1>
+                  <button
+                    class="p-2 px-10 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="max-w-auto min-w-auto min-h-[28rem] md:w-[25rem] flex justify-center items-center flex-col cursor-pointer border rounded-2xl"
+              >
+                <div
+                  class="border-2 w-full h-80 flex justify-center items-center rounded-2xl"
+                >
+                  <img src="assets/header_img01.png" alt="" class="h-64" />
+                </div>
+
+                <h1 class="mt-5 text-2xl font-bold">EcoZen Bar Stool</h1>
+                <p class="text-gray-400">crafted frome wood</p>
+
+                <div class="flex justify-between items-center w-full px-4 pb-5">
+                  <h1 class="text-2xl font-bold mt-5">$8.00</h1>
+                  <button
+                    class="p-2 px-10 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="max-w-auto min-w-auto min-h-[28rem] md:w-[25rem] flex justify-center items-center flex-col cursor-pointer border rounded-2xl"
+              >
+                <div
+                  class="border-2 w-full h-80 flex justify-center items-center rounded-2xl"
+                >
+                  <img src="assets/crafts.png" alt="" class="h-64" />
+                </div>
+
+                <h1 class="mt-5 text-2xl font-bold">EcoZen Bar Stool</h1>
+                <p class="text-gray-400">crafted frome wood</p>
+
+                <div class="flex justify-between items-center w-full px-4 pb-5">
+                  <h1 class="text-2xl font-bold mt-5">$8.00</h1>
+                  <button
+                    class="p-2 px-10 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="max-w-auto min-w-auto min-h-[28rem] md:w-[25rem] flex justify-center items-center flex-col cursor-pointer border rounded-2xl"
+              >
+                <div
+                  class="border-2 w-full h-80 flex justify-center items-center rounded-2xl"
+                >
+                  <img src="assets/header2.png" alt="" class="h-64" />
+                </div>
+
+                <h1 class="mt-5 text-2xl font-bold">EcoZen Bar Stool</h1>
+                <p class="text-gray-400">crafted frome wood</p>
+
+                <div class="flex justify-between items-center w-full px-4 pb-5">
+                  <h1 class="text-2xl font-bold mt-5">$8.00</h1>
+                  <button
+                    class="p-2 px-10 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="max-w-auto min-w-auto min-h-[28rem] md:w-[25rem] flex justify-center items-center flex-col cursor-pointer border rounded-2xl"
+              >
+                <div
+                  class="border-2 w-full h-80 flex justify-center items-center rounded-2xl"
+                >
+                  <img src="assets/crafts.png" alt="" class="h-64" />
+                </div>
+
+                <h1 class="mt-5 text-2xl font-bold">EcoZen Bar Stool</h1>
+                <p class="text-gray-400">crafted frome wood</p>
+
+                <div class="flex justify-between items-center w-full px-4 pb-5">
+                  <h1 class="text-2xl font-bold mt-5">$8.00</h1>
+                  <button
+                    class="p-2 px-10 rounded-3xl text-white bg-black font-medium border shadow-2xl mt-7 duration-300 hover:bg-white hover:text-black"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="scale_data w-11/12 mx-auto my-10">
+        <p class="font-semibold">Subscribe Our</p>
+        <h1
+          class="text-6xl font-semibold tracking-wider md:text-7xl lg:text-8xl xl:text-9xl md:font-bold font-Orbitron"
+        >
+          Newsletter
+        </h1>
+
+        <div
+          class="p-5 bg-gray-100 rounded-xl w-full flex flex-col justify-center items-center relative mt-28 pt-32 md:pb-20"
+        >
+          <div class="absolute -top-20 sm:-top-28">
+            <img src="assets/crafts.png" alt="" class="w-96 md:w-[27rem]" />
+          </div>
+          <p class="text-center text-gray-800 my-5 sm:my-10 font-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+            animi ullam ea atque ab debitis?
+          </p>
+
+          <div class="w-full flex justify-center items-center">
+            <form
+              action=""
+              class="h-12 border flex justify-between p-2 items-center md:w-4/12 md:h-16 md:p-3"
+            >
+              <input
+                type="email"
+                required
+                class="text-xl p-1 w-11/12 outline-none bg-transparent"
+                placeholder="Your email.."
+              />
+              <button type="submit">
+                <img src="assets/send logo.webp" alt="" class="w-12 h-12" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer text-center md:text-start w-11/12 mx-auto">
+        <div class="md:flex justify-between items-center">
+          <div class="md:text-start">
+            <h1 class="text-3xl font-semibold tracking-wider font-Orbitron">
+              STOOLSMART
+            </h1>
+            <p class="font-medium my-5 text-gray-400 md:w-6/12">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              voluptatem.
+            </p>
+
+            <div></div>
+          </div>
+
+          <div class="md:w-[75%] md:flex justify-between items-center">
+            <div class="my-8">
+              <h1 class="text-3xl font-semibold my-5">ABOUT</h1>
+
+              <ul class="flex flex-col gap-4">
+                <li>Partnership</li>
+                <li>Terms od use</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+
+            <div class="my-8">
+              <h1 class="text-3xl font-semibold my-5">PRODUCTS</h1>
+
+              <ul class="flex flex-col gap-4">
+                <li>Partnership</li>
+                <li>Terms od use</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+
+            <div class="my-8">
+              <h1 class="text-3xl font-semibold my-5">RESOURCES</h1>
+
+              <ul class="flex flex-col gap-4">
+                <li>Partnership</li>
+                <li>Terms od use</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+
+            <div class="my-8">
+              <h1 class="text-3xl font-semibold my-5">CONTCACT</h1>
+
+              <ul class="flex flex-col gap-4">
+                <li>Partnership</li>
+                <li>Terms od use</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-3 md:py-5 border-t text-center md:mt-5">
+          <p>
+            Copyright
+            <a href="https://t.me/DevNerd0" target="_blank" class="font-bold"
+              >©DevNerd</a
+            >
+            .. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
